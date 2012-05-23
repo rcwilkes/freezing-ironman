@@ -1,0 +1,9 @@
+/**
+ * @author Clint Wilkes 5/22/12
+ */
+
+function setColdShift()
+{
+var coldshift = [document.getElementsByTagName("form");]
+alert(coldshift);
+}

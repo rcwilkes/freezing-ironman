@@ -1,0 +1,19 @@
+.fit-content{
+	position : absolute;}
+	
+.fit-content {
+        top : 44px;
+        bottom : 40px;
+        left : 0;
+        right : 0;}
+        
+.fit-content > div {
+        height : 100%;}
+
+.bottom-footer {
+        bottom : 0;
+        width : 100%;}
+        
+img {
+width:100%;
+}

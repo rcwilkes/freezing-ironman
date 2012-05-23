@@ -1,0 +1,151 @@
+<!--Last edited by Clint Wilkes 5/22/12-->
+<html>
+<head>
+    <title>Nucor Mobile App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link href="Images/favicon.ico" rel="Shortcut Icon" type="image/x-icon" />
+	<link rel="stylesheet" href="Scripts/style.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="Scripts/utilities.js"></script>
+	
+</head>
+<body>
+	<!--Home Page-->
+    <section id="homepage" data-iscroll="enable" data-role="page">
+        <header data-role="header" data-position="fixed" data-theme="c">
+            <img src="Images/nucor_logo.jpg" alt="nucor_logo" style="margin:auto;display:block;"/>
+        </header>
+        <div data-role="content">
+            <p>This is the home pageThis is the home pageThis is the home pageThis is the home pageThis is the home page
+            	This is the home pageThis is the home pageThis is the home pageThis is the home pageThis is the home page
+            	This is the home pageThis is the home pageThis is the home pageThis is the home pageThis is the home page
+            	This is the home pageThis is the home pageThis is the home pageThis is the home pageThis is the home page
+            	This is the home pageThis is the home pageThis is the home pageThis is the home pageThis is the home page
+            	This is the home pageThis is the home pageThis is the home pageThis is the home pageThis is the home page
+            	This is the home pageThis is the home pageThis is the home pageThis is the home pageThis is the home page
+            	This is the home pageThis is the home pageThis is the home pageThis is the home pageThis is the home page
+            	This is the home pageThis is the home pageThis is the home pageThis is the home pageThis is the home page
+            	This is the home pageThis is the home pageThis is the home pageThis is the home pageThis is the home page
+            	This is the home pageThis is the home pageThis is the home pageThis is the home pageThis is the home page
+            	This is the home pageThis is the home pageThis is the home pageThis is the home pageThis is the home page
+            	This is the home pageThis is the home pageThis is the home pageThis is the home pageThis is the home page</p>
+        </div>
+		<div data-role="navbar" class="ui-navbar" data-position="fixed" data-theme="c">
+	  		<ul class="ui-grid-b">
+        	<li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+            <li><a href="#snapshotpage" data-icon="grid">Snapshot</a></li>
+            <li><a href="#coldpage" data-icon="grid">Cold Mill</a></li>
+            <li><a href="#hotpage" data-icon="grid">Hot Mill</a></li>
+	  		</ul>
+		</div>
+    </section>
+    
+	<!--Plant Snapshot Page-->
+    <section id="snapshotpage" data-iscroll="enable" data-role="page">
+        <header data-role="header" data-position="fixed" data-theme="c">
+            <img src="Images/nucor_logo.jpg" alt="nucor_logo" style="margin:auto;display:block;"/>
+        </header>
+        <div data-role="content">
+            <p>This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	This is the plant snapshot page.This is the plant snapshot page.This is the plant snapshot page.
+            	</p>
+        </div>
+		<div data-role="navbar" class="ui-navbar" data-position="fixed" data-theme="c">
+	  		<ul class="ui-grid-b">
+            <li><a href="#homepage" data-icon="home">Home</a></li>
+            <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="grid">Snapshot</a></li>
+            <li><a href="#coldpage" data-icon="grid">Cold Mill</a></li>
+            <li><a href="#hotpage" data-icon="grid">Hot Mill</a></li>
+	  		</ul>
+		</div>
+    </section>
+    
+	<!--Cold Mill Shift Log Page-->
+    <section id="coldpage" data-iscroll="enable" data-role="page">
+        <header data-role="header" data-position="fixed" data-theme="c">
+            <img src="Images/nucor_logo.jpg" alt="nucor_logo" style="margin:auto;display:block;"/>
+        </header>
+        <div data-role="content">
+            <p>This is the cold mill log</p>
+			<form name ="coldform" action="Scripts/utilites.js" method="post">
+			<div data-role="fieldcontain">
+				<label for="colddate">Select Log Date:</label>
+				<input name="colddate" id="colddate" type="date" data-role="datebox" data-options='{"mode": "flipbox"}'/>
+				<a href="#" class="ui-input-clear ui-btn ui-btn-up-c ui-btn-icon-notext ui-btn-corner-all ui-shadow" title="Open Date Picker" 
+				data-theme="c" style="vertical-align: middle; display: inline-block; "><span class="ui-btn-inner ui-btn-corner-all">
+				<span class="ui-btn-text">Open Date Picker</span><span class="ui-icon ui-icon-grid ui-icon-shadow"></span></span></a>
+				<fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain">
+				<legend>Choose a Shift:</legend>
+         		<input type="radio" name="radio-coldshift" id="radio-coldday" value="day" checked="checked" />
+         		<label for="radio-coldday">Day Shift</label>
+
+         		<input type="radio" name="radio-coldshift" id="radio-coldnight" value="night"  />
+         		<label for="radio-coldnight">Night Shift</label>
+			</div>
+			<input type="submit" value="Submit" />	
+			</form>
+        </div>
+		<div data-role="navbar" class="ui-navbar" data-position="fixed" data-theme="c">
+	  		<ul class="ui-grid-b">
+            <li><a href="#homepage" data-icon="home">Home</a></li>
+            <li><a href="#snapshotpage" data-icon="grid">Snapshot</a></li>
+            <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="grid">Cold Mill</a></li>
+            <li><a href="#hotpage" data-icon="grid">Hot Mill</a></li>
+	  		</ul>
+		</div>
+    </section>
+    
+    <!--Hot Mill Shift Log Page-->   
+    <section id="hotpage" data-iscroll="enable" data-role="page">
+        <header data-role="header" data-position="fixed" data-theme="c">
+            <img src="Images/nucor_logo.jpg" alt="nucor_logo" style="margin:auto;display:block;"/>
+        </header>
+        <div data-role="content">
+            <p>This is the hot mill log</p>
+ 			<form name="hotform" action="Scripts/utilites.js" method="post" >
+			<div data-role="fieldcontain">
+				<label for="hotdate">Select Log Date:</label>
+				<input name="hotdate" id="hotdate" type="date" data-role="datebox" data-options='{"mode": "datebox"}'/>
+				<fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain">
+				<legend>Choose a Shift:</legend>
+         		<input type="radio" name="radio-hotshift" id="radio-hotday" value="day" checked="checked" />
+         		<label for="radio-hotday">Day Shift</label>
+
+         		<input type="radio" name="radio-hotshift" id="radio-hotnight" value="night"  />
+         		<label for="radio-hotnight">Night Shift</label>
+         		</fieldset>
+			</div>	
+			<input type="submit" value="Submit" />				
+			</form>           
+        </div>
+		<div data-role="navbar" class="ui-navbar" data-position="fixed" data-theme="c">
+	  		<ul class="ui-grid-b">
+            <li><a href="#homepage" data-icon="home">Home</a></li>
+            <li><a href="#snapshotpage" data-icon="grid">Snapshot</a></li>
+            <li><a href="#coldpage" data-icon="grid">Cold Mill</a></li>
+            <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="grid">Hot Mill</a></li>
+	  		</ul>
+		</div>
+    </section>
+</body>
+</html>
